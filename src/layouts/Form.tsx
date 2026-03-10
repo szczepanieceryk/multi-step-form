@@ -5,7 +5,7 @@ const Form: React.FC = () => {
   const [number, setNumber] = useState<string>('');
 
   return (
-    <form className="p-6 mx-auto w-[90%] rounded-lg bg-white">
+    <form className="p-6 mx-auto w-[90%] max-w-[600px] rounded-lg bg-white">
       <h1 className="text-2xl font-semibold">Personal info</h1>
       <p className="my-2 text-gray-400">
         Please provide your name, email address, and phone number.
