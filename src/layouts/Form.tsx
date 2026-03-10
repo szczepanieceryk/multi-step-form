@@ -35,7 +35,7 @@ const Form: React.FC = () => {
       <label className="block mb-4" htmlFor="">
         Phone Number
         <input
-          type="number"
+          type="text"
           placeholder="e.g. +1 234 567 890"
           className="p-2 w-full border-2 border-gray-200 rounded-md"
           onChange={(e) => setNumber(e.target.value)}
