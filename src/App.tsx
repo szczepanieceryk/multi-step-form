@@ -1,9 +1,9 @@
 import React from 'react';
-
-const App = () => {
+import Form from './layouts/Form';
+const App: React.FC = () => {
   return (
     <div>
-      <h1 className="text-5xl text-black">Multi step form</h1>
+      <Form />
     </div>
   );
 };
