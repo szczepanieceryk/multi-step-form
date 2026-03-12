@@ -8,7 +8,7 @@ const App: React.FC = () => {
     <div className="w-[90%] mx-auto max-w-[800px]">
       <div className="mx-auto max-w-[600px] ">
         <Form step={step} />
-        <FormNavigation step={step} />
+        <FormNavigation step={step} setStep={setStep} />
       </div>
     </div>
   );
