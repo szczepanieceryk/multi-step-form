@@ -17,6 +17,7 @@ const FirstStep: React.FC = () => {
           placeholder="e.g. Stephen King"
           className="p-2 w-full border-2 border-gray-200 rounded-md"
           value={name}
+          required
           onChange={(e) => setName(e.target.value)}
         />{' '}
       </label>
@@ -28,6 +29,7 @@ const FirstStep: React.FC = () => {
           placeholder="e.g. stephenking@lorem.com"
           className="p-2 w-full border-2 border-gray-200 rounded-md"
           value={email}
+          required
           onChange={(e) => setEmail(e.target.value)}
         />{' '}
       </label>
@@ -40,6 +42,7 @@ const FirstStep: React.FC = () => {
           className="p-2 w-full border-2 border-gray-200 rounded-md"
           onChange={(e) => setNumber(e.target.value)}
           value={number}
+          required
         />{' '}
       </label>
     </>

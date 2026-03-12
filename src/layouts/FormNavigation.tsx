@@ -6,10 +6,12 @@ interface FormNavigationProps {
 
 const FormNavigation: React.FC<FormNavigationProps> = ({ step, setStep }) => {
   return (
-    <div className="my-4 flex flex-wrap justify-between">
-      <button className="text-gray-400" onClick={() => setStep((s) => Math.max(s - 1, 1))}>
-        Go Back
-      </button>
+    <div className={`my-4 flex flex-wrap ${step === 1 ? 'justify-end' : 'justify-between'}`}>
+      {step > 1 && (
+        <button className="text-gray-400" onClick={() => setStep((s) => Math.max(s - 1, 1))}>
+          Go Back
+        </button>
+      )}
 
       <button
         className="py-2 px-3 bg-blue-500 rounded-md text-white"
