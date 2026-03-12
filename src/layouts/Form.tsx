@@ -11,19 +11,22 @@ interface FormNavigationProps {
 const Form: React.FC<FormNavigationProps> = ({ step }) => {
   const returnStepToShow = () => {
     let stepToShow;
-    if (step === 1) {
-      stepToShow = <FirstStep />;
-    }
-    if (step === 2) {
-      stepToShow = <SecondStep />;
-    }
 
-    if (step === 3) {
-      stepToShow = <ThirdStep />;
-    }
-
-    if (step === 4) {
-      stepToShow = <FourthStep />;
+    switch (step) {
+      case 1:
+        stepToShow = <FirstStep />;
+        break;
+      case 2:
+        stepToShow = <SecondStep />;
+        break;
+      case 3:
+        stepToShow = <ThirdStep />;
+        break;
+      case 4:
+        stepToShow = <FourthStep />;
+        break;
+      default:
+        stepToShow = <FirstStep />;
     }
 
     return stepToShow;
